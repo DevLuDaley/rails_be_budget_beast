@@ -1,6 +1,6 @@
 class Api::V1::AccountsController < ApplicationController
 
-    before_action :find_account #, only: [:update]
+    # before_action :find_account #, only: [:update]
 
 def index
 	@accounts = Account.all.order(:created_at)
